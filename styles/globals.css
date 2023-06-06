@@ -2,31 +2,154 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font - Nunito-Black */
+@layer base {
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 900;
+    src: url('../public/assets/fonts/Nunito-Black.ttf') format('ttf');
+  }
+
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 900;
+    src: url('../public/assets/fonts/Nunito-BlackItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 700;
+    src: url('../public/assets/fonts/Nunito-Bold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 700;
+    src: url('../public/assets/fonts/Nunito-BoldItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 800;
+    src: url('../public/assets/fonts/Nunito-ExtraBold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 800;
+    src: url('../public/assets/fonts/Nunito-ExtraBoldItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 200;
+    src: url('../public/assets/fonts/Nunito-ExtraLight.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 200;
+    src: url('../public/assets/fonts/Nunito-ExtraLightItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 300;
+    src: url('../public/assets/fonts/Nunito-Light.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 300;
+    src: url('../public/assets/fonts/Nunito-LightItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 500;
+    src: url('../public/assets/fonts/Nunito-Medium.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 500;
+    src: url('../public/assets/fonts/Nunito-MediumItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 400;
+    src: url('../public/assets/fonts/Nunito-Regular.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 600;
+    src: url('../public/assets/fonts/Nunito-SemiBold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Nunito';
+    font-weight: 500;
+    src: url('../public/assets/fonts/Nunito-SemiBoldItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Pacifico';
+    font-weight: 400;
+    src: url('../public/assets/fonts/Pacifico-Regular.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 900;
+    src: url('../public/assets/fonts/Roboto-Black.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 900;
+    src: url('../public/assets/fonts/Roboto-BlackItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../public/assets/fonts/Roboto-Bold.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('../public/assets/fonts/Roboto-BoldItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: url('../public/assets/fonts/Roboto-Light.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    src: url('../public/assets/fonts/Roboto-LightItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../public/assets/fonts/Roboto-Medium.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url('../public/assets/fonts/Roboto-MediumItalic.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url('../public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 100;
+    src: url('../public/assets/fonts/Roboto-Thin.ttf') format('ttf');
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 100;
+    src: url('../public/assets/fonts/Roboto-ThinItalic.ttf') format('ttf');
+  }
+}
+
+body,
+p {
+  @apply font-primary text-sm md:text-base text-blackLight;
+}
+
 html,
 body {
   padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-/* Very small devices (width less than 600px) */
-:root {
-  font-size: 7.5px;
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  :root {
-    font-size: 14px;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  :root {
-    font-size: 16px;
-  }
 }
 
 a {
@@ -36,4 +159,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+/**
+* Used in all section components
+*/
+.section-padding-primary {
+  @apply py-[3.75rem] md:py-[6.25rem] xl:py-[7.5rem];
 }
