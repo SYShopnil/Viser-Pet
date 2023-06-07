@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Font - Nunito-Black */
+/* Font - Nunito, Pacifico, Roboto*/
 @layer base {
   @font-face {
     font-family: 'Nunito';
@@ -164,6 +164,3 @@ a {
 /**
 * Used in all section components
 */
-.section-padding-primary {
-  @apply py-[3.75rem] md:py-[6.25rem] xl:py-[7.5rem];
-}
