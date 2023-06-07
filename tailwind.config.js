@@ -1,5 +1,3 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: 'jit',
@@ -10,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ['Roboto', ...fontFamily.sans],
-        secondary: ['Pacifico', ...fontFamily.sans],
-        tertiary: ['Nunito', ...fontFamily.sans],
+        primary: ['Roboto', 'sans-serif'],
+        secondary: ['Nunito', 'sans-serif'],
+        tertiary: ['Pacifico', 'cursive'],
       },
       container: {
         center: true,
@@ -56,6 +54,15 @@ module.exports = {
       },
       keyframes: {},
       animation: {},
+      borderRadius: {
+        none: '0',
+        sm: '0.25rem',
+        md: '0.375 rem',
+        lg: '0.625rem',
+        xl: '1.344rem',
+        '2xl': '1.406rem',
+        '3xl': '1.875rem',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],
