@@ -26,6 +26,7 @@ module.exports = {
       '@src': path.resolve(__dirname, '../src/'),
       '@root': path.resolve(__dirname, '../'),
       '@styles': path.resolve(__dirname, '../styles/'),
+      '@mocks': path.resolve(__dirname, '../__mock-props__/'),
     };
     return config;
   },
