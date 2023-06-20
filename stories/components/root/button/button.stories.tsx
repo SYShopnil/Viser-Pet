@@ -1,6 +1,7 @@
 import { Button } from '@src/components/root';
 import { BtnColorSchema, BtnSize } from '@src/types/root';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
+import 'tailwindcss/tailwind.css';
 
 export default {
   title: 'Component/Root/Button/All',
@@ -17,15 +18,21 @@ export default {
       },
     },
     colorSchema: {
-      control: 'text',
+      control: {
+        type: 'select',
+      },
       options: [...Object.values(BtnColorSchema)],
     },
     btnSize: {
-      control: 'text',
+      control: {
+        type: 'select',
+      },
       options: [...Object.values(BtnSize)],
     },
     hoverColorSchema: {
-      control: 'text',
+      control: {
+        type: 'select',
+      },
       options: [...Object.values(BtnColorSchema)],
     },
     isOpenNewTab: {
@@ -44,8 +51,12 @@ export default {
  */
 const ButtonTemplate: ComponentStory<typeof Button> = (arg) => {
   return (
-    <div>
-      <Button {...arg} />
+    <div className="container">
+      <div className={`h-screen flex justify-center items-center`}>
+        <div>
+          <Button {...arg} />
+        </div>
+      </div>
     </div>
   );
 };
@@ -57,8 +68,12 @@ const ButtonTemplate: ComponentStory<typeof Button> = (arg) => {
  */
 const RedirectButton: ComponentStory<typeof Button.RedirectButton> = (arg) => {
   return (
-    <div>
-      <Button.RedirectButton {...arg} />
+    <div className="container">
+      <div className={`h-screen flex justify-center items-center`}>
+        <div>
+          <Button.RedirectButton {...arg} />
+        </div>
+      </div>
     </div>
   );
 };
