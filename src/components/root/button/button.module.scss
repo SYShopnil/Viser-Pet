@@ -1,0 +1,93 @@
+$hover_transition_time: 0.2s;
+$hover_transition_type: ease-in;
+
+@mixin WhiteBgTextBrownHover {
+  transition: all $hover_transition_time $hover_transition_type;
+  &:hover {
+    @apply bg-white text-primary;
+  }
+}
+@mixin WhiteBgTextGrayHover {
+  transition: all $hover_transition_time $hover_transition_type;
+  &:hover {
+    @apply bg-whiteMoreLight text-blackLight;
+    border: 1px solid #dee1e4;
+  }
+}
+@mixin BrownBgTextWhiteHover {
+  transition: all $hover_transition_time $hover_transition_type;
+  &:hover {
+    @apply bg-primary text-[#F8FBFF];
+    // border: 1px solid #dee1e4;
+  }
+}
+@mixin Text {
+  @apply text-base leading-[1.375rem];
+}
+@mixin BtnSizeTemplate($px, $py, $btnSize, $fontWeight) {
+  .btn-#{$btnSize}-wrapper {
+    .btn-#{$btnSize} {
+      @include Text;
+      padding: $py $px;
+      font-weight: $fontWeight;
+    }
+  }
+}
+
+.BrownBgTextWhite {
+  &.mainWrapper {
+    @apply bg-primary text-[#F8FBFF];
+  }
+  &.WhiteBgTextBrownHover {
+    @include WhiteBgTextBrownHover;
+  }
+  &.WhiteBgTextGrayHover {
+    @include WhiteBgTextGrayHover;
+  }
+  &.BrownBgTextWhiteHover {
+    @include BrownBgTextWhiteHover;
+  }
+}
+
+.WhiteBgTextBrown {
+  &.mainWrapper {
+    @apply bg-white text-primary;
+  }
+  &.WhiteBgTextBrownHover {
+    @include WhiteBgTextBrownHover;
+  }
+  &.WhiteBgTextGrayHover {
+    @include WhiteBgTextGrayHover;
+  }
+  &.BrownBgTextWhiteHover {
+    @include BrownBgTextWhiteHover;
+  }
+}
+
+.WhiteBgTextGray {
+  &.mainWrapper {
+    @apply bg-whiteMoreLight text-blackLight;
+    border: 1px solid #dee1e4;
+  }
+  &.WhiteBgTextBrownHover {
+    @include WhiteBgTextBrownHover;
+  }
+  &.WhiteBgTextGrayHover {
+    @include WhiteBgTextGrayHover;
+  }
+  &.BrownBgTextWhiteHover {
+    @include BrownBgTextWhiteHover;
+  }
+}
+
+@include BtnSizeTemplate(1.25rem, 0.25rem, 'sm', 600);
+@include BtnSizeTemplate(1.813rem, 0.688rem, 'md', 700);
+@include BtnSizeTemplate(1.875rem, 0.875rem, 'lg', 700);
+@include BtnSizeTemplate(7.625rem, 0.875rem, 'ex-lg', 700);
+
+.text-transform-uppercase {
+  @apply uppercase;
+}
+.text-transform-capitalized {
+  @apply capitalize;
+}

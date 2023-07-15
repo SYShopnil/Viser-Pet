@@ -1,6 +1,7 @@
 export enum BtnColorSchema {
   BrownBgTextWhite = 'BrownBgTextWhite',
-  WhiteBgText = 'WhiteBgText',
+  WhiteBgTextBrown = 'WhiteBgTextBrown',
+  WhiteBgTextGray = 'WhiteBgTextGray',
 }
 export enum BtnSize {
   Small = 'btn-sm',
@@ -13,9 +14,13 @@ export interface IButton {
   colorSchema: BtnColorSchema;
   btnSize: BtnSize;
   hoverColorSchema: BtnColorSchema;
+  isUpperCased: boolean;
+  dataTestId?: string;
 }
 export interface INormalButton extends IButton {
-  clickHandler?: (e: MouseEvent, ...a: any[]) => void;
+  clickHandler?: (
+    e: React.MouseEvent<HTMLElement> | React.FormEvent<HTMLFormElement>
+  ) => void;
 }
 export interface IRedirectButton extends IButton {
   isOpenNewTab: boolean;

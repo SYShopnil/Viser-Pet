@@ -1,10 +1,14 @@
+import {
+  mock_data_normalButton,
+  mock_data_redirectButton,
+} from '@root/__mock-props__/component/root/button';
 import { Button } from '@src/components/root';
-import { BtnColorSchema, BtnSize } from '@src/types/root';
+import { BtnColorSchema, BtnSize, INormalButton } from '@src/types/root';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import 'tailwindcss/tailwind.css';
 
 export default {
-  title: 'Component/Root/Button/All',
+  title: 'Component/Root/Buttons',
   component: Button,
   argTypes: {
     btnText: {
@@ -41,6 +45,10 @@ export default {
         arg: 'isOpenNewTab',
         exists: true,
       },
+    },
+    isUpperCased: {
+      type: 'boolean',
+      defaultValue: true,
     },
   },
 } as ComponentMeta<typeof Button>;
@@ -79,29 +87,33 @@ const RedirectButton: ComponentStory<typeof Button.RedirectButton> = (arg) => {
 };
 
 /**
- * Normal Button
+ * Normal Button Demos
  *
  */
-export const NormalButtonDemo = ButtonTemplate.bind({});
+export const NormalButtonDemoOne = ButtonTemplate.bind({});
 
-NormalButtonDemo.args = {
-  colorSchema: BtnColorSchema.BrownBgTextWhite,
-  btnSize: BtnSize.Small,
-  btnText: 'Click Me',
-  hoverColorSchema: BtnColorSchema.BrownBgTextWhite,
-};
+NormalButtonDemoOne.args = mock_data_normalButton[0];
+
+export const NormalButtonDemoTwo = ButtonTemplate.bind({});
+
+NormalButtonDemoTwo.args = mock_data_normalButton[1];
+export const NormalButtonDemoThree = ButtonTemplate.bind({});
+
+NormalButtonDemoThree.args = mock_data_normalButton[2];
 
 /**
  *
- * Redirect Button
+ * Redirect Button Demos
  *
  */
-export const RedirectButtonDemo = RedirectButton.bind({});
-RedirectButtonDemo.args = {
-  btnSize: BtnSize.ExtraLarge,
-  btnText: 'Click Me',
-  colorSchema: BtnColorSchema.BrownBgTextWhite,
-  hoverColorSchema: BtnColorSchema.BrownBgTextWhite,
-  isOpenNewTab: true,
-  redirectLink: 'https://chat.openai.com/',
-};
+export const RedirectButtonDemoOne = RedirectButton.bind({});
+RedirectButtonDemoOne.args = mock_data_redirectButton[0];
+
+export const RedirectButtonDemoTwo = RedirectButton.bind({});
+RedirectButtonDemoTwo.args = mock_data_redirectButton[1];
+
+export const RedirectButtonDemoThree = RedirectButton.bind({});
+RedirectButtonDemoThree.args = mock_data_redirectButton[2];
+
+export const RedirectButtonDemoFour = RedirectButton.bind({});
+RedirectButtonDemoFour.args = mock_data_redirectButton[3];
