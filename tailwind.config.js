@@ -4,6 +4,7 @@ module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
+    './stories/**/*.stories.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {

@@ -19,7 +19,8 @@
       "@src/*": ["./src/*"],
       "@pages/*": ["./pages/*"],
       "@styles/*": ["./styles/*"],
-      "@root/*": ["./*"]
+      "@root/*": ["./*"],
+      "@mocks/*": ["./__mock-props__/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

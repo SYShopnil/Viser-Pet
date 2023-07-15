@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Expect  successfully rendered 1`] = `
+<span
+  data-testid="btn-normal-one"
+>
+  <span
+    class="w-[100%] h-[auto]  flex justify-center items-center cursor-pointer  rounded-[1.875rem]   BrownBgTextWhite mainWrapper WhiteBgTextBrownHover btn-sm-wrapper"
+  >
+    <span
+      class="inline-block !font-secondary btn-sm text-transform-capitalized"
+    >
+      Normal Button One
+    </span>
+  </span>
+</span>
+`;
+
+exports[`Expect  successfully rendered 2`] = `
+<span
+  data-testid="btn-normal-two"
+>
+  <span
+    class="w-[100%] h-[auto]  flex justify-center items-center cursor-pointer  rounded-[1.875rem]   WhiteBgTextBrown mainWrapper BrownBgTextWhiteHover btn-sm-wrapper"
+  >
+    <span
+      class="inline-block !font-secondary btn-sm text-transform-capitalized"
+    >
+      Normal Button Two
+    </span>
+  </span>
+</span>
+`;
+
+exports[`Expect  successfully rendered 3`] = `
+<span
+  data-testid="btn-normal-three"
+>
+  <span
+    class="w-[100%] h-[auto]  flex justify-center items-center cursor-pointer  rounded-[1.875rem]   WhiteBgTextGray mainWrapper WhiteBgTextBrownHover btn-sm-wrapper"
+  >
+    <span
+      class="inline-block !font-secondary btn-sm text-transform-capitalized"
+    >
+      Normal Button Three
+    </span>
+  </span>
+</span>
+`;
+
+exports[`Expect successfully rendered 1`] = `
+<span
+  data-testid="btn-normal-one"
+>
+  <span
+    class="w-[100%] h-[auto]  flex justify-center items-center cursor-pointer  rounded-[1.875rem]   BrownBgTextWhite mainWrapper WhiteBgTextBrownHover btn-sm-wrapper"
+  >
+    <span
+      class="inline-block !font-secondary btn-sm text-transform-capitalized"
+    >
+      Normal Button One
+    </span>
+  </span>
+</span>
+`;
+
+exports[`Expect successfully rendered 2`] = `
+<span
+  data-testid="btn-normal-two"
+>
+  <span
+    class="w-[100%] h-[auto]  flex justify-center items-center cursor-pointer  rounded-[1.875rem]   WhiteBgTextBrown mainWrapper BrownBgTextWhiteHover btn-sm-wrapper"
+  >
+    <span
+      class="inline-block !font-secondary btn-sm text-transform-capitalized"
+    >
+      Normal Button Two
+    </span>
+  </span>
+</span>
+`;
+
+exports[`Expect successfully rendered 3`] = `
+<span
+  data-testid="btn-normal-three"
+>
+  <span
+    class="w-[100%] h-[auto]  flex justify-center items-center cursor-pointer  rounded-[1.875rem]   WhiteBgTextGray mainWrapper WhiteBgTextBrownHover btn-sm-wrapper"
+  >
+    <span
+      class="inline-block !font-secondary btn-sm text-transform-capitalized"
+    >
+      Normal Button Three
+    </span>
+  </span>
+</span>
+`;
